@@ -1,11 +1,23 @@
 {
-  "plugins": ["unused-imports", "simple-import-sort", "@tanstack/query"],
-  "extends": ["next", "prettier"],
+  "plugins": [
+    "unused-imports",
+    "simple-import-sort",
+    "@tanstack/query"
+  ],
+  "extends": [
+    "next",
+    "prettier",
+    "plugin:storybook/recommended"
+  ],
   "rules": {
     "no-console": [
       "warn",
       {
-        "allow": ["warn", "error", "info"]
+        "allow": [
+          "warn",
+          "error",
+          "info"
+        ]
       }
     ],
     "unused-imports/no-unused-imports": "error",
