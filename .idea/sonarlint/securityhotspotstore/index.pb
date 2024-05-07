@@ -21,8 +21,6 @@ E
 app/globals.css,4\d\4dfa49b1332116153eb16507891285845e9ab86e
 H
 src/share/fonts/font.css,9\3\939d71c3a093c897b82397ed55cce43ad7491605
-L
-src/widget/layout/header.tsx,3\5\35e37e4876be19935aa6c1ba9e9e2c25209b3f1d
 J
 src/widget/layout/index.ts,0\6\068d1e330985368a182ebaf9acb8973400de6be4
 ‚
@@ -45,10 +43,6 @@ K
 public/svg/chevron-left.svg,0\9\09cfae4ec3a76822907de78e7c4125ebc74c8777
 P
  src/widget/layout/app-status.tsx,e\e\ee4d508a14105c4d5bc6689bb9f40b3aa655cfd6
-O
-src/entities/post/post-list.tsx,7\2\729763bae80f26bd242bb3a02f0a4a0e12868445
-@
-src/types/tag.ts,2\0\20104e1e1c0c2584554278f39b1380ae7d65262e
 B
 src/types/index.ts,c\d\cd7a0a5ed00515f0d0cd32a8badd4ed5ef962af8
 A
@@ -63,8 +57,6 @@ N
 src/entities/post/one-post.tsx,c\7\c7af633a9c58c50067afcb361847d6f17ea8947c
 J
 src/entities/post/index.ts,5\e\5e73ef1bc3d2bf250268e928e98ce858c1af2b4d
-@
-src/share/ui/tag,5\2\5284ac663b21662a0ec01d111e7906ea5851b7af
 D
 src/share/ui/tag.tsx,3\5\3574c3448de635d652351ba9a9bb1eacd5613fa5
 E
@@ -73,3 +65,12 @@ E
 next.config.js,8\1\811a6d5a2e04fadb44d8eec365f2fa8af5c4facf
 H
 src/share/ui/divider.tsx,b\5\b5ae906ae9ce0ba9ba99a81a9a186fd7ce910d34
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+D
+app/counter.test.tsx,3\0\308a3c17a453b59b684b3f038a4ee7122aafea94
+K
+public/svg/phone-status.svg,2\c\2cf5ff6d937d123bdcc1594b20ea90fb43b433c2
+R
+"src/widget/layout/apple-status.tsx,b\9\b9523d57173a9c275caf4a6f85a5d4e5efed6a10

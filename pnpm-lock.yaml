@@ -26,15 +26,18 @@ dependencies:
   '@tanstack/react-query':
     specifier: ^5.32.0
     version: 5.34.2(react@18.3.1)
+  class-variance-authority:
+    specifier: ^0.7.0
+    version: 0.7.0
   clsx:
     specifier: ^2.1.1
     version: 2.1.1
   framer-motion:
     specifier: ^11.1.7
     version: 11.1.7(react-dom@18.3.1)(react@18.3.1)
-  lucide:
+  lucide-react:
     specifier: ^0.378.0
-    version: 0.378.0
+    version: 0.378.0(react@18.3.1)
   next:
     specifier: latest
     version: 14.2.3(@babel/core@7.24.5)(react-dom@18.3.1)(react@18.3.1)
@@ -1977,6 +1980,12 @@ packages:
       fsevents: 2.3.3
     dev: true
 
+  /class-variance-authority@0.7.0:
+    resolution: {integrity: sha512-jFI8IQw4hczaL4ALINxqLEXQbWcNjoSkloa4IaufXCJr6QawJyw7tuRysRsrE8w2p/4gGaxKIt/hX3qz/IbD1A==}
+    dependencies:
+      clsx: 2.0.0
+    dev: false
+
   /cli-cursor@4.0.0:
     resolution: {integrity: sha512-VGtlMu3x/4DOtIUwEkRezxUZ2lBacNJCHash0N0WeZDBS+7Ux1dm3XWAgWYxLJFMMdOeXMHXorshEFhbMSGelg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
@@ -1994,6 +2003,11 @@ packages:
 
   /client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+    dev: false
+
+  /clsx@2.0.0:
+    resolution: {integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==}
+    engines: {node: '>=6'}
     dev: false
 
   /clsx@2.1.1:
@@ -3689,8 +3703,12 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /lucide@0.378.0:
-    resolution: {integrity: sha512-bwWXuZf2jZbCI0Y+MWyv5bedWIxYKtgAEzC2Yl87Nrt/KcG9qTwAQxVFcZ6IwBioML06QUQsG+qRjyQvYHdbBQ==}
+  /lucide-react@0.378.0(react@18.3.1):
+    resolution: {integrity: sha512-u6EPU8juLUk9ytRcyapkWI18epAv3RU+6+TC23ivjR0e+glWKBobFeSgRwOIJihzktILQuy6E0E80P2jVTDR5g==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.3.1
     dev: false
 
   /lz-string@1.5.0:
