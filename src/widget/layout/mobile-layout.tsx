@@ -1,13 +1,13 @@
 import {PropsWithChildren} from "react";
 
-import {AppTitle} from "@/widget/layout/app-title";
+import {AppBar} from "@/widget/layout/app-bar";
 import {AppleStatus} from "@/widget/layout/apple-status";
 
 export function MobileLayout({children}: PropsWithChildren) {
-    return <div className="w-[393px] h-[852px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+    return <div className="w-[393px] h-[852px]">
         <div className="w-full h-full border-[1px] border-grey-scale-grey-05 border-solid">
             <AppleStatus/>
-            <AppTitle title={"포스트 리스트"} isHistory/>
+            <AppBar line icon={2} title={"포스트 리스트"}/>
             {children}
         </div>
     </div>

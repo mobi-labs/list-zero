@@ -1,13 +1,12 @@
 import type {Meta, StoryObj} from '@storybook/react';
 
 import {generatePost} from "@/share/mock/generate-post";
-import {MobileLayout} from "@/widget/layout";
 import {PostList} from "@/widget/post/post-list";
 
 const meta = {
-    title: 'widget/post/postList',
+    title: 'widget/post/post-List',
     component: PostList,
-    decorators: (Story) => <MobileLayout><Story/></MobileLayout>
+    tags: ["autodocs"],
 } satisfies Meta<typeof PostList>;
 
 export default meta;

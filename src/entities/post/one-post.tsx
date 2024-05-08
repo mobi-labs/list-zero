@@ -1,5 +1,4 @@
 import {ChatOutlined, FavoriteBorderOutlined} from "@mui/icons-material";
-import Image from "next/image";
 
 import {cn} from "@/share/libs";
 import {Divider, Tag} from "@/share/ui";
@@ -31,12 +30,14 @@ export function OnePost({post, isDivider, isReverse = false}: Props) {
                     {subTitle}
                 </div>
                 <div className="text-text-secondary flex gap-[12px]">
-                    <div className="flex items-center gap-[2px]">
+                    <div className="flex items-center">
                         <FavoriteBorderOutlined className="w-5 h-5"/>
-                        <span>{like_count}</span>
+                        <div className="w-[18px] h-[18px] flex items-center justify-center">{like_count}</div>
+                    </div>
+                    <div className="flex items-center">
                         <div className="flex items-center gap-[2px]">
                             <ChatOutlined className="w-5 h-5"/>
-                            <span>{comment_count}</span>
+                            <div className="w-[18px] h-[18px] flex items-center justify-center">{comment_count}</div>
                         </div>
                     </div>
                 </div>
