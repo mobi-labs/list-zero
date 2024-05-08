@@ -9,11 +9,11 @@ const TagVariants = cva("font-pretendard leading-[120%] text-[12px] inline-flex 
     {
         variants: {
             level: {
-                "level-0": "text-text-paragraph02 bg-grey-scale-grey-02",
-                "level-1": "bg-red-red-01 text-red-red-05",
-                "level-2": "bg-green-green-02 text-green-green-07",
-                "level-3": "bg-blue-blue-01 text-blue-blue-06",
-                "level-4": "text-text-paragraph01 bg-grey-scale-white border-[1px] border-solid border-[#E5E5E5]"
+                "level-0": "text-paragraph2 bg-grey-scale-2",
+                "level-1": "bg-red-1 text-red-5",
+                "level-2": "bg-green-2 text-green-7",
+                "level-3": "bg-blue-1 text-blue-6",
+                "level-4": "text-paragraph1 bg-grey-scale-white border-[1px] border-solid border-[#E5E5E5]"
             },
             rectangle: {
                 circle: "rounded-[50px]",

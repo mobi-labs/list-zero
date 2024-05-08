@@ -1,6 +1,5 @@
 import type {Preview} from '@storybook/react'
 import '../app/globals.css'
-import {MobileLayout} from "../src/widget/layout";
 
 const preview: Preview = {
     parameters: {

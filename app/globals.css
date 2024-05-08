@@ -4,48 +4,57 @@
 
 @layer components {
     .h1 {
-        @apply text-h1 font-pretendard font-bold leading-[31.2px] tracking-tighter;
+        @apply text-h1 font-pretendard;
     }
     .h2 {
-        @apply text-h2 font-pretendard font-bold leading-[28.8px] tracking-tighter;
+        @apply text-h2 font-pretendard;
     }
     .h3 {
-        @apply text-h3 font-pretendard font-bold leading-[24px] tracking-tighter;
+        @apply text-h3 font-pretendard;
     }
     .subtitle1 {
-        @apply text-subtitle1 font-pretendard font-bold leading-[21.6px] tracking-tighter;
+        @apply text-subtitle1 font-pretendard;
     }
     .subtitle2 {
-        @apply text-subtitle2 font-pretendard font-bold leading-[19.2px] tracking-tighter;
+        @apply text-subtitle2 font-pretendard;
     }
     .subtitle3 {
-        @apply text-subtitle3 font-pretendard font-bold leading-[16.8px] tracking-tighter;
+        @apply text-subtitle3 font-pretendard;
     }
     .subtitle4 {
-        @apply text-subtitle4 font-pretendard font-bold leading-[14.4px] tracking-tighter;
+        @apply text-subtitle4 font-pretendard;
     }
     .body1 {
-        @apply text-body1 font-pretendard font-normal leading-[24px] tracking-tighter;
+        @apply text-body1 font-pretendard;
     }
     .body2 {
-        @apply text-body2 font-pretendard font-normal leading-[21.6px] tracking-tighter;
+        @apply text-body2 font-pretendard;
     }
     .body3 {
-        @apply text-body3 font-pretendard font-normal leading-[28.8px] tracking-tighter;
+        @apply text-body3 font-pretendard;
     }
     .body4 {
-        @apply text-body4 font-pretendard font-normal leading-[19.2px] tracking-tighter;
+        @apply text-body4 font-pretendard;
     }
     .body5 {
-        @apply text-body5 font-pretendard font-normal leading-[25.6px] tracking-tighter;
+        @apply text-body5 font-pretendard;
     }
     .body6 {
-        @apply text-body6 font-pretendard font-normal leading-[18px] tracking-tighter;
+        @apply text-body6 font-pretendard;
     }
     .caption1 {
-        @apply text-caption1 font-pretendard font-semibold leading-[16.8px] tracking-tighter;
+        @apply text-caption1 font-pretendard;
     }
     .caption2 {
-        @apply text-caption2 font-pretend
+        @apply text-caption2 font-pretendard;
+    }
+    .caption3 {
+        @apply text-caption3 font-pretendard;
+    }
+    .caption4 {
+        @apply text-caption4 font-pretendard;
+    }
+    .caption5 {
+        @apply text-caption5 font-pretendard;
     }
 }

@@ -1,9 +1,10 @@
-import {AppTitle} from "@/widget/layout";
+import {generatePost} from "@/share/mock/generate-post";
 import {PostList} from "@/widget/post";
+
+const mockPostList = generatePost(5)
 
 export function Post() {
     return <section>
-        <AppTitle title={"페이지 타이틀"} isHistory/>
-        <PostList/>
+        <PostList postList={mockPostList}/>
     </section>
 }

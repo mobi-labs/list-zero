@@ -23,24 +23,27 @@ export function OnePost({post, isDivider, isReverse = false}: Props) {
                     {tags.map(tag => <Tag key={tag.id} rectangle={"square"} level={tag.level} name={tag.name}/>)}
                 </div>
                 <div
-                    className="overflow-hidden text-ellipsis font-pretendard font-bold leading-[120%] text-text-primary">
+                    className="overflow-hidden text-ellipsis text-text-primary text-subtitle2">
                     {title}
                 </div>
                 <div
-                    className="overflow-hidden text-text-paragraph02 text-ellipsis text-[14px] font-pretendard font-bold leading-[120%]">
+                    className="overflow-hidden text-text-paragraph02 text-ellipsis text-caption2">
                     {subTitle}
                 </div>
                 <div className="text-text-secondary flex gap-[12px]">
-                    <div className="flex items-center gap-[2px]"><FavoriteBorderOutlined
-                        sx={{width: "20px", height: "20px"}}/>{like_count}</div>
-                    <div className="flex items-center gap-[2px]"><ChatOutlined
-                        sx={{width: "20px", height: "20px"}}/>{comment_count}</div>
+                    <div className="flex items-center gap-[2px]">
+                        <FavoriteBorderOutlined className="w-5 h-5"/>
+                        <span>{like_count}</span>
+                        <div className="flex items-center gap-[2px]">
+                            <ChatOutlined className="w-5 h-5"/>
+                            <span>{comment_count}</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             {
-                img_url &&
-                <div className="w-[80px] h-[80px] rounded-[10px] mx-0 my-auto overflow-hidden">
-                    <Image src={img_url} alt={"포스트 이미지"} width={80} height={80}/>
+                img_url && <div className="flex items-center">
+                    <div className="bg-grey-scale-3 rounded-[10px] w-20 h-20"/>
                 </div>
             }
         </div>
