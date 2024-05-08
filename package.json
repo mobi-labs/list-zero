@@ -11,6 +11,16 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "test"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint . --ext ts,tsx --fix",
+    "*.{json,js,ts,jsx,tsx,html}": "prettier --write --ignore-unknown"
+  },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.11.4",
