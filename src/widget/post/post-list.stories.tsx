@@ -1,27 +1,27 @@
-import type {Meta, StoryObj} from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react'
 
-import {generatePost} from "@/share/mock/generate-post";
-import {PostList} from "@/widget/post/post-list";
+import { generatePost } from '@/share/mock/generate-post'
+import { PostList } from '@/widget/post/post-list'
 
 const meta = {
-    title: 'widget/post/post-List',
-    component: PostList,
-    tags: ["autodocs"],
-} satisfies Meta<typeof PostList>;
+  title: 'widget/post/post-List',
+  component: PostList,
+  tags: ['autodocs'],
+} satisfies Meta<typeof PostList>
 
-export default meta;
+export default meta
 
 const post = generatePost(1)
 const posts = generatePost(5)
 
 export const OnePostList: StoryObj<typeof PostList> = {
-    args: {
-        postList: post,
-    },
-};
+  args: {
+    postList: post,
+  },
+}
 
 export const ManyPostList: StoryObj<typeof PostList> = {
-    args: {
-        postList: posts,
-    },
-};
+  args: {
+    postList: posts,
+  },
+}

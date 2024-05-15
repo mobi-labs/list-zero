@@ -1,1 +1,1 @@
-export {IconBox} from './icon-box'
+export { IconBox } from './icon-box'

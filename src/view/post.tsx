@@ -1,12 +1,14 @@
-import {PostType} from "@/types";
-import {PostList} from "@/widget/post";
+import { PostType } from '@/entities/model'
+import { PostList } from '@/widget/post'
 
 type Props = {
-    postList: PostType[]
+  postList: PostType[]
 }
 
-export function Post({postList}: Props) {
-    return <section>
-        <PostList postList={postList}/>
+export function Post({ postList }: Props) {
+  return (
+    <section>
+      <PostList postList={postList} />
     </section>
+  )
 }
