@@ -11,7 +11,7 @@ const meta = {
   },
   argTypes: {
     color: {
-      description: '테마를 level로 구분합니다. level에 따라 다른 색상을 나타냅니다.',
+      description: 'color 에 따라 다른 색상을 나타냅니다.',
       options: ['Grey', 'Red', 'Green', 'Blue', 'Default'],
       control: { type: 'select' },
     },

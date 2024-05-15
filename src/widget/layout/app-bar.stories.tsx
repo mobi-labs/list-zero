@@ -1,4 +1,3 @@
-import { Button } from '@mui/material'
 import type { Meta, StoryObj } from '@storybook/react'
 
 import { AppBar } from '@/widget/layout/app-bar'
@@ -13,7 +12,7 @@ const meta = {
       control: { type: 'select' },
       description: '사용되는 페이지의 타입을 보여줍니다.',
     },
-    title: {
+    children: {
       control: { type: 'text' },
       type: { name: 'string' },
       description: '현재 페이지의 이름 혹은 채팅방의 이름을 가리킵니다.',
@@ -47,34 +46,22 @@ export default meta
 
 export const Default: StoryObj<typeof AppBar> = {
   args: {
-    title: '메인 리스트',
-    icon: 2,
-    type: 'default',
+    children: <AppBar.DefaultContent icon={2}>홈페이지</AppBar.DefaultContent>,
   },
 }
 
-export const TextButton: StoryObj<typeof AppBar> = {
+export const Chat: StoryObj<typeof AppBar> = {
   args: {
-    title: '메인 리스트',
-    icon: 2,
-    type: 'default',
-    textButton: (
-      <Button color="primary" variant="text">
-        텍스트
-      </Button>
+    children: (
+      <AppBar.ChatContent count={10} icon={2}>
+        홈페이지
+      </AppBar.ChatContent>
     ),
   },
 }
 
 export const Home: StoryObj<typeof AppBar> = {
   args: {
-    type: 'home',
-  },
-}
-
-export const Chat: StoryObj<typeof AppBar> = {
-  args: {
-    title: '채팅창 이름',
-    type: 'chat',
+    children: <AppBar.HomeContent icon={2} />,
   },
 }
