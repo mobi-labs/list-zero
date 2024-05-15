@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { generatePost } from '@/share/mock/generate-post'
+import { generatePost } from '@/entities/mock/data'
 import { OnePost } from '@/widget/post/one-post'
 
 const post = generatePost(1)[0]
@@ -8,7 +8,7 @@ const post = generatePost(1)[0]
 post.img_url = '이미지'
 
 const meta = {
-  title: 'entities/post/one-post',
+  title: 'widget/post/one-post',
   component: OnePost,
   tags: ['autodocs'],
   argTypes: {

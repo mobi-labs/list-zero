@@ -1,4 +1,4 @@
-import { generatePost } from '@/share/mock/generate-post'
+import { generatePost } from '@/entities/mock/data'
 import { Post } from '@/view'
 
 export const metadata = {

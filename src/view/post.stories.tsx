@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { generatePost } from '@/share/mock/generate-post'
+import { generatePost } from '@/entities/mock/data/generate-post'
 import { Post } from '@/view/post'
 import { MobileLayout } from '@/widget/layout'
 

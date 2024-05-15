@@ -1,3 +1,4 @@
 export { AppBar } from './app-bar'
-export { AppleStatus } from './apple-status'
+export { AppleStatusBar } from './apple-status-bar'
+export { IconBox } from './icon-box'
 export { MobileLayout } from './mobile-layout'

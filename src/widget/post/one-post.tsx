@@ -20,9 +20,16 @@ export function OnePost({ post, isDivider, isReverse = false }: Props) {
       <div className={cn('flex w-full justify-between', { 'flex-row-reverse': reverseItem })}>
         <div className={cn('flex flex-col gap-[10px]', { 'items-end': reverseItem })}>
           <div className="flex gap-1">
-            {tags.map(tag => (
-              <Tag key={tag.id} rectangle={'square'} level={tag.level} name={tag.name} />
-            ))}
+            {tags.map(tag => {
+              {
+                const { id, color, name } = tag
+                return (
+                  <Tag key={id} rectangle={'square'} color={color}>
+                    {name}
+                  </Tag>
+                )
+              }
+            })}
           </div>
           <div className="overflow-hidden text-ellipsis text-subtitle2 text-text-primary">{title}</div>
           <div className="overflow-hidden text-ellipsis text-caption2 text-text-paragraph02">{subTitle}</div>

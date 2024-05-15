@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { IconBox } from '@/feature/layout/icon-box'
+import { IconBox } from '@/widget/layout/icon-box'
 
 const meta = {
-  title: 'feature/layout/icon-box',
+  title: 'widget/layout/icon-box',
   component: IconBox,
   tags: ['autodocs'],
   parameters: {

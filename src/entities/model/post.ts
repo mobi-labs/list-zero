@@ -1,7 +1,9 @@
+export type ColorType = 'Default' | 'Red' | 'Green' | 'Blue' | 'Grey'
+
 export type TagType = {
   id: number
   name: string
-  level: 'level-0' | 'level-1' | 'level-2' | 'level-3' | 'level-4'
+  color: ColorType
 }
 export type PostType = {
   postId: number

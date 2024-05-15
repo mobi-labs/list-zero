@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import { ComponentProps, ReactNode } from 'react'
 
-import { IconBox } from '@/feature/layout'
 import { cn } from '@/share/libs'
 import { Logo } from '@/share/ui/logo'
+import { IconBox } from '@/widget/layout/icon-box'
 
 type Props = {
   title: string

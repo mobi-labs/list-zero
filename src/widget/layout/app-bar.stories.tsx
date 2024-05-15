@@ -1,7 +1,7 @@
 import { Button } from '@mui/material'
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { AppBar } from '@/widget/layout'
+import { AppBar } from '@/widget/layout/app-bar'
 
 const meta = {
   title: 'widget/layout/app-bar',

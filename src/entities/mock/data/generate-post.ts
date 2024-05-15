@@ -1,4 +1,4 @@
-import { PostType, TagType } from '@/entities/model'
+import { ColorType, PostType } from '@/entities/model'
 
 export function generatePost(count: number): PostType[] {
   return Array(count)
@@ -11,7 +11,8 @@ export function generatePost(count: number): PostType[] {
         tags: Array(Math.floor(Math.random() * 5))
           .fill('')
           .map((_, i) => {
-            return { id: i, name: `test-${i}`, level: `level-${Math.floor(Math.random() * 5)}` as TagType['level'] }
+            const COLOR: ColorType[] = ['Default', 'Blue', 'Green', 'Grey', 'Red']
+            return { id: i, name: `test-${i}`, color: COLOR[Math.floor(Math.random() * 6)] }
           }),
         comment_count: Math.floor(Math.random() * 10),
         like_count: Math.floor(Math.random() * 10),

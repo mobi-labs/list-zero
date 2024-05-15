@@ -1,1 +1,1 @@
-export type { PostType, TagType } from './post'
+export type { ColorType, PostType, TagType } from './post'
